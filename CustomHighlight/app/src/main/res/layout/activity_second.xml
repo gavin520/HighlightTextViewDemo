@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tanny.customhighlight.MainActivity">
+
+    <com.tanny.customhighlight.HighlightTextView
+        android:id="@+id/hightview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#999"
+        app:hltvDisallowHighlightLineBreak="true"
+        app:hltvHighlightColor="#2ae"
+        android:text="The HTTP client’s job is to accept your request and produce its response. This is simple in theory but it gets tricky in practice.Each HTTP request contains a URL, a method (like GET or POST), and a list of headers. When your requested URL has moved, the webserver will return a response code like 302 to indicate the document’s new URL. OkHttp will follow the redirect to retrieve a final response.For synchronous calls, you bring your own thread and are responsible for managing how many simultaneous requests you make. Too many simultaneous connections wastes resources; too few harms latency."
+        app:hltvHighlightTexts="HTTP client,is simple in theory,gets tricky in practice,When your requested URL has moved,how many simultaneous,connections wastes resources"/>
+
+</LinearLayout>
